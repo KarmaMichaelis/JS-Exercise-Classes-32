@@ -77,7 +77,12 @@ class Person {
 */
 
 class Car {
-
+  constructor(attributes){
+    this.model=attributes.model;
+    this.milesPerGallon=attributes.milesPerGallon;
+    this.tank=0;
+    this.odometer=0;
+  }
 }
 
 /*
