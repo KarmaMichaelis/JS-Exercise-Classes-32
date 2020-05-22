@@ -147,7 +147,8 @@ class Instructor extends Lambdasian{
       this.speciality=attributes.speciality;
       this.favLanguage=attributes.favLanguage;
       this.catchPhrase=attributes.catchPhrase;
-      
+      //made for task six
+      this.channel=attributes.channel;
     }//end of constructor
     demo(){
       return `Today we are learning about ${this.subject}`
@@ -179,13 +180,15 @@ class Student extends Lambdasian{
       this.previousBackground=attributes.previousBackground;
       this.className=attributes.className;
       this.favSubjects=attributes.favSubjects;
+      
     }//closes constructor
     PRAssignment(){
       return `${this.student} has submitted a PR for ${this.subject}`
     }//close method
     sprintChallenge(){
       return `${this.student} has begun sprint challenge on ${this.subject}`
-    }//closes metod
+    }//closes method
+
 }
 
 /*
@@ -207,6 +210,12 @@ class ProjectManager extends Instructor{
     this.gradClassName=attributes.gradClassName;
     this.favInstructor=attributes.favInstructor;
    }//closes constructor
+   standup(){
+    return `${name} announces to ${this.channel}, @channel standy times!`
+   }//end of method
+   debugsCode(){
+    return `${this.name} debugs ${this.student}'s code on ${this.subject}`
+   }///end method
 }
 
 /*
