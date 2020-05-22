@@ -45,7 +45,7 @@ class Person {
     this.name= attributes.name;
     this.age= attributes.age;
     this.stomach=[];
-  }
+  }//closes constuctor
   eat(edible){
     if(this.stomach.length<10){
       this.stomach.push(edible)
@@ -82,8 +82,24 @@ class Car {
     this.milesPerGallon=attributes.milesPerGallon;
     this.tank=0;
     this.odometer=0;
+  }//closes constructor
+  fill(gallons){
+    gallons+this.tank;
+  }//closes fill method
+  drive(distance){
+    distance+this.odometer;
+    if(this.odometer++){
+      return this.tank/this.milesPerGallon-1
+    }//closes of statment
+
+  }//closes drive method
+  car(fuel){
+    
+    if(this.tank===0){
+      return `{I ran out of fuel at ${this.odometer} miles!}`
+    }
   }
-}
+}//closes Car
 
 /*
   TASK 3
