@@ -180,6 +180,12 @@ class Student extends Lambdasian{
       this.className=attributes.className;
       this.favSubjects=attributes.favSubjects;
     }//closes constructor
+    PRAssignment(){
+      return `${this.student} has submitted a PR for ${this.subject}`
+    }//close method
+    sprintChallenge(){
+      return `${this.student} has begun sprint challenge on ${this.subject}`
+    }//closes metod
 }
 
 /*
