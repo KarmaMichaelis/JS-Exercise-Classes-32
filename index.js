@@ -117,7 +117,10 @@ class Lambdasian {
   constructor(attributes){
     this.name=attributes.name;
     this.age=attributes.age;
-    this.location=attributes.location
+    this.location=attributes.location;
+    //taken from task four to be accesed in task four and five correctly
+    this.subject=attributes.subject;
+      this.student=attributes.student;
   }//closes constructor
   speak(){
     return `Hello my name is ${this.name}, I am from ${this.location}`
@@ -144,14 +147,13 @@ class Instructor extends Lambdasian{
       this.speciality=attributes.speciality;
       this.favLanguage=attributes.favLanguage;
       this.catchPhrase=attributes.catchPhrase;
-      this.subject=attributes.subject;
-      this.studentName=attributes.studentName;
+      
     }//end of constructor
     demo(){
       return `Today we are learning about ${this.subject}`
     }//end of demo
     grade(){
-      return `${this.studentName} recieves a perfect score on ${this.subject}`
+      return `${this.student} recieves a perfect score on ${this.subject}`
     }
 
 }
